@@ -33,8 +33,8 @@ import {
   TemplateFile,
   TemplateFolder,
 } from "@/modules/playground/lib/path-to-json";
-import WebContainerPreview from "@/modules/webcontainers/components/webcontainer-preview";
-import { useWebContainer } from "@/modules/webcontainers/hooks/useWebContainer";
+// import WebContainerPreview from "@/modules/webcontainers/components/webcontainer-preview";
+// import { useWebContainer } from "@/modules/webcontainers/hooks/useWebContainer";
 import {
   AlertCircle,
   Bot,
@@ -83,14 +83,14 @@ const MainPlaygroundPage = () => {
     updateFileContent,
   } = useFileExplorer();
 
-  const {
-    serverUrl,
-    isLoading: containerLoading,
-    error: containerError,
-    instance,
-    writeFileSync,
-    // @ts-ignore
-  } = useWebContainer({ templateData });
+  // const {
+  //   serverUrl,
+  //   isLoading: containerLoading,
+  //   error: containerError,
+  //   instance,
+  //   writeFileSync,
+  //   // @ts-ignore
+  // } = useWebContainer({ templateData });
 
   const lastSyncedContent = useRef<Map<string, string>>(new Map());
 
@@ -105,25 +105,25 @@ const MainPlaygroundPage = () => {
   }, [templateData, setTemplateData, openFiles.length]);
 
   // Create wrapper functions that pass saveTemplateData
-  const wrappedHandleAddFile = useCallback(
-    (newFile: TemplateFile, parentPath: string) => {
-      return handleAddFile(
-        newFile,
-        parentPath,
-        writeFileSync!,
-        instance,
-        saveTemplateData
-      );
-    },
-    [handleAddFile, writeFileSync, instance, saveTemplateData]
-  );
+  // const wrappedHandleAddFile = useCallback(
+  //   (newFile: TemplateFile, parentPath: string) => {
+  //     return handleAddFile(
+  //       newFile,
+  //       parentPath,
+  //       writeFileSync!,
+  //       instance,
+  //       saveTemplateData
+  //     );
+  //   },
+  //   [handleAddFile, writeFileSync, instance, saveTemplateData]
+  // );
 
-  const wrappedHandleAddFolder = useCallback(
-    (newFolder: TemplateFolder, parentPath: string) => {
-      return handleAddFolder(newFolder, parentPath, instance, saveTemplateData);
-    },
-    [handleAddFolder, instance, saveTemplateData]
-  );
+  // const wrappedHandleAddFolder = useCallback(
+  //   (newFolder: TemplateFolder, parentPath: string) => {
+  //     return handleAddFolder(newFolder, parentPath, instance, saveTemplateData);
+  //   },
+  //   [handleAddFolder, instance, saveTemplateData]
+  // );
 
   const wrappedHandleDeleteFile = useCallback(
     (file: TemplateFile, parentPath: string) => {
@@ -220,13 +220,13 @@ const MainPlaygroundPage = () => {
         );
 
         // Sync with WebContainer
-        if (writeFileSync) {
-          await writeFileSync(filePath, fileToSave.content);
-          lastSyncedContent.current.set(fileToSave.id, fileToSave.content);
-          if (instance && instance.fs) {
-            await instance.fs.writeFile(filePath, fileToSave.content);
-          }
-        }
+        // if (writeFileSync) {
+        //   await writeFileSync(filePath, fileToSave.content);
+        //   lastSyncedContent.current.set(fileToSave.id, fileToSave.content);
+        //   if (instance && instance.fs) {
+        //     await instance.fs.writeFile(filePath, fileToSave.content);
+        //   }
+        // }
 
         const newTemplateData = await saveTemplateData(updatedTemplateData);
         setTemplateData(newTemplateData || updatedTemplateData);
@@ -257,8 +257,8 @@ const MainPlaygroundPage = () => {
     [
       activeFileId,
       openFiles,
-      writeFileSync,
-      instance,
+      // writeFileSync,
+      // instance,
       saveTemplateData,
       setTemplateData,
       setOpenFiles,
@@ -356,8 +356,8 @@ const MainPlaygroundPage = () => {
           onFileSelect={handleFileSelect}
           selectedFile={activeFile}
           title="File Explorer"
-          onAddFile={wrappedHandleAddFile}
-          onAddFolder={wrappedHandleAddFolder}
+          // onAddFile={wrappedHandleAddFile}
+          // onAddFolder={wrappedHandleAddFolder}
           onDeleteFile={wrappedHandleDeleteFile}
           onDeleteFolder={wrappedHandleDeleteFolder}
           onRenameFile={wrappedHandleRenameFile}
@@ -518,7 +518,7 @@ const MainPlaygroundPage = () => {
                       <>
                         <ResizableHandle />
                         <ResizablePanel defaultSize={50}>
-                          <WebContainerPreview
+                          {/* <WebContainerPreview
                             templateData={templateData}
                             instance={instance}
                             writeFileSync={writeFileSync}
@@ -526,7 +526,7 @@ const MainPlaygroundPage = () => {
                             error={containerError}
                             serverUrl={serverUrl!}
                             forceResetup={false}
-                          />
+                          /> */}
                         </ResizablePanel>
                       </>
                     )}
