@@ -6,27 +6,27 @@ VibeCode Editor is a blazing-fast **AI-powered web IDE** that runs entirely in y
 
 ### 🔐 Login & Authentication
 
-![Login Screenshot](./assets/photo-2.png)
+![Login Screenshot](./assets/photo-3.png)
 
 ### 🏠 Dashboard
 
-![Dashboard Screenshot](./assets/photo-3.png)
+![Dashboard Screenshot](./assets/photo-6.png)
 
 ### 📂 Template Selection
 
-![Template Selection Screenshot](./assets/photo-4.png)
+![Template Selection Screenshot](./assets/photo-5.png)
 
 ### 💻 Playground with File Explorer & Editor
 
-![Playground Screenshot](./assets/photo-5.png)
+![Playground Screenshot](./assets/photo-4.png)
 
 ### 🖥 Built-in Terminal
 
-![Terminal Screenshot](./assets/photo-6.png)
+![Terminal Screenshot](./assets/photo-3.png)
 
 ### ⭐ Project Management
 
-## ![Project Management Screenshot](./assets/photo-1.png)
+![Project Management Screenshot](./assets/photo-1.png)
 
 =======
 
