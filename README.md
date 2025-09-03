@@ -85,13 +85,3 @@ Open [http://localhost:3000](http://localhost:3000) to start coding in your brow
 - [ ] Plugin marketplace for custom AI models and tools
 
 ---
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork this repo and submit a pull request.
-
----
-
-## 📜 License
-
-MIT License © 2025 [Your Name]
