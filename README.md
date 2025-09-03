@@ -22,7 +22,7 @@ VibeCode Editor is a blazing-fast **AI-powered web IDE** that runs entirely in y
 
 ### 🖥 Built-in Terminal
 
-![Terminal Screenshot](./assets/photo-3.png)
+![Terminal Screenshot](./assets/photo-2.png)
 
 ### ⭐ Project Management
 
