@@ -28,9 +28,6 @@ VibeCode Editor is a blazing-fast **AI-powered web IDE** that runs entirely in y
 
 ![Project Management Screenshot](./assets/photo-1.png)
 
-=======
-
-## ![Screenshot](./assets/photo-2.png) ![Screenshot](./assets/photo-3.png) ![Screenshot](./assets/photo-4.png) ![Screenshot](./assets/photo-5.png) ![Screenshot](./assets/photo-6.png) ![Screenshot](./assets/photo-1.png)
 
 > > > > > > > Stashed changes
 
