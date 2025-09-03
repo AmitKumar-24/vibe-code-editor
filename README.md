@@ -2,7 +2,12 @@
 
 VibeCode Editor is a blazing-fast **AI-powered web IDE** that runs entirely in your browser — no installation required. Built with **Next.js, WebContainers, Monaco Editor, TailwindCSS, shadcn/ui, and Ollama (local models)**, it provides a complete developer-first experience with real-time execution, intelligent code completion, and seamless file management.
 
-![VibeCode Editor Screenshot](./screenshot.png) <!-- replace with your actual demo image -->
+![Screenshot](./public/photo-3.png)
+![Screenshot](./public/photo-6.png)
+![Screenshot](./public/photo-5.png)
+![Screenshot](./public/photo-4.png)
+![Screenshot](./public/photo-2.png)
+![Screenshot](./public/photo-1.png)
 
 ---
 
