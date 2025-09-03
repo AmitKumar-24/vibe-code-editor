@@ -24,7 +24,7 @@ VibeCode Editor is a blazing-fast **AI-powered web IDE** that runs entirely in y
 
 ![Terminal Screenshot](./assets/photo-2.png)
 
-### ⭐ Project Management
+### ⭐ Project Management AI Chat
 
 ![Project Management Screenshot](./assets/photo-1.png)
 
